@@ -1,13 +1,11 @@
 import React from 'react';
-import { LocationType, ResponseType} from "../../assets";
-import {PageWrapper} from "../../components/PageWrapper/PageWrapper";
-import {Header} from "../../components/Header/Header";
+import { LocationType, ResponseType} from "assets/api/rick-and-morty-api";
+import {PageWrapper} from "components/PageWrapper/PageWrapper";
 import {dehydrate, useQuery} from "@tanstack/react-query";
-
 import {QueryClient} from "@tanstack/query-core";
-import {Card} from "../../components/Card/Card";
-import {getLayout} from "../../components/Layout/BaseLayout/BaseLayout";
-import Home from "../index";
+import {Card} from "components/Card/Card";
+import {getLayout} from "components/Layout/BaseLayout/BaseLayout";
+
 
 
 const getLocations = () => {
